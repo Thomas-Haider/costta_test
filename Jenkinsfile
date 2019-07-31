@@ -13,12 +13,12 @@ pipeline {
     }
     stage('Building') {
       steps {
-        sh 'npm run build'
+        bat 'npm run build'
       }
     }
     stage('Starting') {
       steps {
-        sh 'npm start'
+        bat 'npm start'
       }
     }
   }
